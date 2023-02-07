@@ -1,0 +1,20 @@
+plugins {
+    id 'java-library'
+    id 'groovy'
+}
+
+dependencies {
+    implementation gradleApi() //必须
+    implementation localGroovy() //必须
+    //如果要使用android的API，需要引用这个，实现Transform的时候会用到
+    //implementation 'com.android.tools.build:gradle:3.3.0'
+}
+
+repositories {
+//    google()
+    mavenCentral() //必须
+}
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
