@@ -44,3 +44,12 @@ dependencies {
 beforeEvaluate {
     println 'app beforeEvaluate'
 }
+
+afterEvaluate {
+    // 1. 找到需要依赖自己 Task的构建流程的Task
+    def cusPluginTask = tasks.findByName("cusPluginTask")
+    println "cusPluginTask $cusPluginTask"
+    def preBuildTask = tasks.findByName("preBuild")
+    println "preBuildTask $preBuildTask"
+    preBuildTask.dependsOn(cusPluginTask)
+}

@@ -1,0 +1,12 @@
+plugins {
+    id 'groovy'
+    id 'java-gradle-plugin'
+    id 'com.github.dcendents.android-maven'
+}
+
+group = 'com.github.arthur'
+
+dependencies {
+    implementation gradleApi() //必须
+    implementation localGroovy() //必须
+}

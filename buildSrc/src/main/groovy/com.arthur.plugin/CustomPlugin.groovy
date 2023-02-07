@@ -4,7 +4,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 
-class CusPlugin implements Plugin<Project> {
+class CustomPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {

@@ -6,6 +6,6 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.7.20' apply false
 }
 
-beforeEvaluate {
-    println 'root beforeEvaluate'
+dependencies {
+    classpath "com.github.dcendents:android-maven-gradle-plugin:2.1" // // GitHub Maven 插件
 }
