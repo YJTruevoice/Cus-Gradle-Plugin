@@ -10,7 +10,7 @@ class CheckAarPlugin implements Plugin<Project> {
     void apply(Project project) {
         def extension = project.extensions.create('componentVersionConfig', ComponentVersionConfig)
 
-        def componentVersionCheckTask = project.rootProject.task('componentVersionCheck') {
+        def componentVersionCheckTask = project.task('componentVersionCheck') {
             doLast {
                 Map<String, String> componentVersion = extension.componentVersionMap
                 println "componentVersions ${componentVersion}"
