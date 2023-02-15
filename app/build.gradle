@@ -39,15 +39,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    implementation 'com.github.YJTruevoice:Cus-Gradle-Plugin:v1.0.3'
 }
 
 afterEvaluate {
-    def cusPluginTask = tasks.findByName("cusPluginTask")
-    println "cusPluginTask $cusPluginTask"
-    def checkAarPluginTask = tasks.findByName("checkAarPluginTask")
-    println "checkAarPluginTask $checkAarPluginTask"
-    def preBuildTask = tasks.findByName("preBuild")
-    println "preBuildTask $preBuildTask"
-//    preBuildTask.dependsOn(cusPluginTask)
+//    componentVersionConfig {
+//        componentVersionMap componentVersion
+//    }
 }

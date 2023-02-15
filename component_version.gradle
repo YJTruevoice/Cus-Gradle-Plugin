@@ -1,0 +1,24 @@
+ext {
+    componentVersion = [
+            // 以下是基础库
+            commonlib    : "1.0.9",
+            baselib      : "1.0.9",
+            ui           : '1.0.1',
+            cement       : '1.0.5',
+            ncflutter    : '3.0.10',
+            web          : '0.0.3',
+            bridge_common: '0.0.1',
+            annotation   : '0.1.0',
+            audiorecorder: '0.0.1-SNAPSHOT',
+//            update       : '0.3.0-SNAPSHOT',
+//            download     : '1.0.2-SNAPSHOT',
+//            secret       : '1.0.2-SNAPSHOT',
+//            netbusiness  : '1.0.11-SNAPSHOT',
+//            network      : '1.0.6-SNAPSHOT',
+//            channel      : '1.0.1-SNAPSHOT',
+//            hybridUpdater: '1.0.3-SNAPSHOT',
+
+            // 以下是业务组件库
+
+    ]
+}
