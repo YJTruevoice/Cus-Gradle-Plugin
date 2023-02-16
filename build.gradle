@@ -2,7 +2,7 @@
 buildscript {
     dependencies {
         classpath "com.github.dcendents:android-maven-gradle-plugin:2.1" // // GitHub Maven 插件
-        classpath "com.github.YJTruevoice:Cus-Gradle-Plugin:1.0.5" // // GitHub Maven 插件
+//        classpath "com.github.YJTruevoice:Cus-Gradle-Plugin:1.0.5" // // GitHub Maven 插件
     }
 }
 plugins {
